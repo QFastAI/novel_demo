@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/operation_dialog_back_shape">
+
+    <TextView
+        android:id="@+id/create_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#7595FF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        android:text="创建新小说"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/start_create_fiction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#7595FF"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        app:layout_constraintTop_toBottomOf="@id/create_cancel_btn"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/random_generate_btn"
+                android:layout_width="@dimen/dp_160"
+                android:layout_height="@dimen/dp_32"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/random_back_shape"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_26"
+                    android:layout_height="@dimen/dp_26"
+                    android:src="@drawable/random_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:text="随机生成创意"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/base_information_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本信息"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_80FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/random_generate_btn"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dp_24"/>
+
+            <LinearLayout
+                android:id="@+id/tab_back_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/base_information_text"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingVertical="@dimen/dp_1"
+                android:paddingHorizontal="@dimen/dp_2"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:background="@drawable/tab_back_shape">
+
+                <TextView
+                    android:id="@+id/tabAll"
+                    style="@style/CustomTabStyle"
+                    android:text="全部"
+                    android:background="@drawable/bg_tab_selected" />
+
+                <!-- 竖线 -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:background="#40FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tabMale"
+                    style="@style/CustomTabStyle"
+                    android:text="男生" />
+
+                <!-- 竖线 -->
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:background="#40FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tabFemale"
+                    style="@style/CustomTabStyle"
+                    android:text="女生" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/creative_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小说名称"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_80FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/tab_back_view"
+                android:layout_marginTop="@dimen/dp_18"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dp_24"/>
+
+            <EditText
+                android:id="@+id/creative_title_edit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_52"
+                app:layout_constraintTop_toBottomOf="@id/creative_title_text"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:textColorHint="@color/color_50FFFFFF"
+                android:textColor="@color/color_90FFFFFF"
+                android:maxLength="20"
+                android:textSize="@dimen/sp_14"
+                android:gravity="top"
+                android:paddingHorizontal="@dimen/dp_12"
+                android:paddingVertical="@dimen/dp_2"
+                android:hint="为您的小说起个具有新意的名字吧（20字以内）"
+                android:background="@drawable/tab_back_shape"/>
+
+            <TextView
+                android:id="@+id/creative_core_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创意核心（可选）"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_80FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/creative_title_edit"
+                android:layout_marginTop="@dimen/dp_18"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dp_24"/>
+
+            <EditText
+                android:id="@+id/creative_core_edit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_82"
+                app:layout_constraintTop_toBottomOf="@id/creative_core_text"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:textColorHint="@color/color_50FFFFFF"
+                android:textColor="@color/color_90FFFFFF"
+                android:textSize="@dimen/sp_14"
+                android:gravity="top"
+                android:paddingHorizontal="@dimen/dp_12"
+                android:paddingVertical="@dimen/dp_2"
+                android:hint="可以输入您的小说创意，或随机生成"
+                android:background="@drawable/tab_back_shape"/>
+
+            <TextView
+                android:id="@+id/select_topic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题选择"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_80FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/creative_core_edit"
+                android:layout_marginTop="@dimen/dp_18"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dp_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/select_topic_recycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_back_shape"
+                app:layout_constraintTop_toBottomOf="@id/select_topic_text"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:paddingHorizontal="@dimen/dp_12"
+                android:paddingVertical="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/select_role_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规则选择"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_80FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/select_topic_recycler"
+                android:layout_marginTop="@dimen/dp_18"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dp_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/select_role_recycler"
+                android:layout_width="0dp"
+                android:background="@drawable/tab_back_shape"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/select_role_text"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:paddingHorizontal="@dimen/dp_12"
+                android:paddingVertical="@dimen/dp_4"/>
+
+            <TextView
+                android:id="@+id/select_plots_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情节选择"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/color_80FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/select_role_recycler"
+                android:layout_marginTop="@dimen/dp_18"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/dp_24"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/select_plots_recycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_back_shape"
+                app:layout_constraintTop_toBottomOf="@id/select_plots_text"
+                android:layout_marginTop="@dimen/dp_12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:paddingHorizontal="@dimen/dp_12"
+                android:paddingVertical="@dimen/dp_4"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

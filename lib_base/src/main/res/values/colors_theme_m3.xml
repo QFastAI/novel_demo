@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="accent1">@color/main_color</color>
+    <color name="neutral2">#FFFFFF</color>
+    <color name="neutral2_daynight">@color/neutral2</color>
+    <color name="error">#FB5151</color>
+    <color name="theme_surface">@color/main_color</color>
+
+    <color name="theme_pressed_5">#0D131314</color>
+    <color name="theme_pressed_10">#1A131314</color>
+    <!--  m3_pressed_overlay = b%10 w%5 -->
+    <color name="theme_pressed_overlay">#1A131314</color>
+    <color name="theme_pressed_overlay_night">#0DFFFFFF</color>
+
+    <!--Button-->
+    <color name="theme_button_background_fade_white">#80FFFFFF</color>
+
+    <color name="theme_8C8C8C">#FF8C8C8C</color>
+
+    <!--主题特殊文字颜色-->
+    <color name="theme_special_text_color">#7571AF</color>
+
+    <color name="theme_color_line_dark">#FFC7C6D4</color>
+
+    <color name="theme_color_background_1">#FFFAFAFA</color>
+    <color name="theme_color_background_2">#FFF6F6F6</color>
+    <color name="theme_color_background_3">#FFF3F3F3</color>
+    <color name="theme_color_background_4">#FFEFEFEF</color>
+    <color name="theme_color_background_5">#FFFFFFFF</color>
+    <color name="theme_color_background_6">#FFDADADA</color>
+
+    <color name="theme_text_100">#FF131314</color>
+    <color name="theme_text_90">#E5131314</color>
+    <color name="theme_text_80">#CC131314</color>
+    <color name="theme_text_60">#99131314</color>
+    <color name="theme_text_50">#80131314</color>
+    <color name="theme_text_40">#66131314</color>
+    <color name="theme_text_30">#4D131314</color>
+    <color name="theme_text_20">#33131314</color>
+
+    <color name="theme_text_100_night">#FFFFFFFF</color>
+    <color name="theme_text_90_night">#E5FFFFFF</color>
+    <color name="theme_text_80_night">#CCFFFFFF</color>
+    <color name="theme_text_60_night">#99FFFFFF</color>
+    <color name="theme_text_50_night">#80FFFFFF</color>
+    <color name="theme_text_40_night">#66FFFFFF</color>
+    <color name="theme_text_30_night">#4DFFFFFF</color>
+    <color name="theme_text_20_night">#33FFFFFF</color>
+
+</resources>

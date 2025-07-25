@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="accent1_button_small">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/on_accent1_button_daynight</item>
+<!--        <item name="shape_radius">8dp</item>-->
+<!--        <item name="shape_solidColor">@color/accent1_button_daynight</item>-->
+<!--        <item name="shape_type">rectangle</item>-->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="accent2_button_large_radius">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/on_accent1_button_daynight</item>
+<!--        <item name="shape_radius">28dp</item>-->
+<!--        <item name="shape_solidColor">@color/accent1_button_daynight</item>-->
+<!--        <item name="shape_type">rectangle</item>-->
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="accent3_button_small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/on_accent1_button_daynight</item>
+<!--        <item name="shape_radius">8dp</item>-->
+<!--        <item name="shape_solidColor">@color/accent1_button_daynight</item>-->
+<!--        <item name="shape_type">rectangle</item>-->
+    </style>
+
+
+
+
+</resources>
+
+

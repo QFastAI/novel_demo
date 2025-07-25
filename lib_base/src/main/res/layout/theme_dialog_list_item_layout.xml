@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.aiso.qfast.base.button.SkyStateButton
+        android:id="@+id/content_view"
+        style="@style/theme_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/theme_bottom_sheet_item_height"
+        android:textSize="@dimen/theme_bottom_sheet_item_text_size"
+        app:btn_auto_text_center="false"
+        app:ss_background_color_pressed="@color/theme_pressed_overlay"
+        app:ss_text_color="@color/theme_text_100"
+        app:ss_text_color_selected="?colorAccent"
+        tools:text="按钮选项" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/fade_black_10_daynight"
+        android:visibility="gone"
+        tools:visibility="visible" />
+</LinearLayout>
+

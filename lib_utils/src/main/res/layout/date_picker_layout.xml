@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/operation_dialog_back_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <com.aiso.qfast.base.button.SkyStateButton
+        android:layout_width="@dimen/dp_34"
+        android:layout_height="@dimen/dp_4"
+        app:ss_background_color="@color/color_575757"
+        app:ss_radius="@dimen/dp_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_6"/>
+
+    <TextView
+        android:id="@+id/takeCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/cancel"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_40FFFFFF"/>
+
+    <TextView
+        android:id="@+id/takeSureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main_btn_color"
+        android:textSize="@dimen/sp_14"
+        android:text="@string/sure"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_16" />
+
+    <com.aiso.qfast.base.view.CustomDatePicker
+        android:id="@+id/customDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_48"
+        android:theme="@style/DatePickerTheme"
+        android:layout_gravity="center_horizontal"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

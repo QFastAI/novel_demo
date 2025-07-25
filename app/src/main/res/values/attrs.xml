@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AgentBubbleView">
+        <attr name="bubbleRadius" format="dimension" />
+        <attr name="bubbleColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+        <attr name="highlightColor" format="color" />
+        <attr name="loadingColor" format="color" />
+        <attr name="defaultPositionX" format="dimension" />
+        <attr name="defaultPositionY" format="dimension" />
+    </declare-styleable>
+</resources>

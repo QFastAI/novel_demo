@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:layout_width="@dimen/dp_82"
+        android:layout_height="@dimen/dp_82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_82"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/loginWithGoogleBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:layout_marginStart="@dimen/dp_48"
+        android:layout_marginEnd="@dimen/dp_48"
+        android:gravity="center"
+        android:background="@drawable/login_with_google_back_shape">
+
+        <ImageView
+            android:layout_width="@dimen/dp_42"
+            android:layout_height="@dimen/dp_48"
+            android:src="@drawable/google_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with google"
+            android:textSize="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

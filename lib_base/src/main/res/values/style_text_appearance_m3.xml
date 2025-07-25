@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  内部使用  -->
+
+    <style name="internal_m3_text_appearance">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/theme_text_80</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.DisplayLarge">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">52sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.DisplayMedium">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">42sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.DisplaySmall">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.HeadlineLarge">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.HeadlineMedium">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.HeadlineSmall">
+        <!-- 常用于 大号的 toolbar title 样式 -->
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.TitleLarge">
+        <!-- 常用于标准的toolbar title , dialog title -->
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.TitleMedium">
+        <!-- 常用于标准的toolbar subtitle -->
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.TitleSmall">
+        <!-- 常用于标准的toolbar button text -->
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <style name="internal_m3_text_appearance.BodyLarge">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.BodyMedium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.BodySmall">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="internal_m3_text_appearance.LabelLarge">
+        <!-- 常用于 button -->
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.LabelMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="internal_m3_text_appearance.LabelSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <!--  对外使用  -->
+
+    <style name="theme_text_appearance" parent="internal_m3_text_appearance.BodyMedium" />
+
+    <style name="theme_text_appearance.semibold">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="theme_text_appearance.bold">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="theme_text_appearance.title" parent="theme_text_appearance.bold">
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/theme_text_100</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="theme_text_appearance.button" parent="theme_text_appearance" />
+
+    <style name="theme_text_appearance.button.large">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="theme_text_appearance.button.medium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="theme_text_appearance.button.small">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+</resources>

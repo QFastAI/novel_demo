@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fade_white_100_daynight">#FFFFFFFF</color>
+    <color name="fade_white_95_daynight">#F2FFFFFF</color>
+    <color name="fade_white_90_daynight">#E6FFFFFF</color>
+    <color name="fade_white_80_daynight">#CCFFFFFF</color>
+    <color name="fade_white_60_daynight">#99FFFFFF</color>
+    <color name="fade_white_50_daynight">#80FFFFFF</color>
+    <color name="fade_white_40_daynight">#66FFFFFF</color>
+    <color name="fade_white_30_daynight">#4DFFFFFF</color>
+    <color name="fade_white_20_daynight">#33FFFFFF</color>
+    <color name="fade_white_10_daynight">#1AFFFFFF</color>
+    <color name="fade_white_5_daynight">#0DFFFFFF</color>
+    <!-- 特殊 白色5% 对应 黑色10%  -->
+    <color name="fade_white_5_daynight_10">#0D000000</color>
+    <color name="fade_white_3_daynight">#08FFFFFF</color>
+
+    <!-- 特殊 白色100% 对应 白色20%  -->
+    <color name="fade_white_100_daynight_20">#FFFFFFFF</color>
+    <color name="fade_white_100_daynight_5">#FFFFFFFF</color>
+
+
+    <color name="fade_black_100_daynight">#FF000000</color>
+    <color name="fade_black_90_daynight">#E6000000</color>
+    <color name="fade_black_80_daynight">#CC000000</color>
+    <color name="fade_black_60_daynight">#99000000</color>
+    <color name="fade_black_50_daynight">#80000000</color>
+    <color name="fade_black_40_daynight">#66000000</color>
+    <color name="fade_black_30_daynight">#4D000000</color>
+    <color name="fade_black_20_daynight">#33000000</color>
+    <color name="fade_black_15_daynight">#26000000</color>
+    <color name="fade_black_10_daynight">#1A000000</color>
+    <color name="fade_black_5_daynight">#0D000000</color>
+    <color name="fade_black_3_daynight">#08000000</color>
+
+    <!-- 特殊 黑色5% 对应 白色10%  -->
+    <color name="fade_black_5_daynight_10">#0D000000</color>
+    <!-- 特殊 黑色3% 对应 白色6%  -->
+    <color name="fade_black_3_daynight_6">#08000000</color>
+
+
+</resources>

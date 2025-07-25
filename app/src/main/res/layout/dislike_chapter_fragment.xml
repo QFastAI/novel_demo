@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/operation_dialog_back_shape">
+
+    <TextView
+        android:id="@+id/evaluate_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_16"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#7595FF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/continue_next_chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="继续下一章"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#7595FF"/>
+
+    <TextView
+        android:id="@+id/base_information_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自行创作/情节发展"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/color_80FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/continue_next_chapter"
+        android:layout_marginTop="@dimen/dp_12"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_24"/>
+
+    <LinearLayout
+        android:id="@+id/tab_back_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/base_information_text"
+        android:layout_marginTop="@dimen/dp_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp_1"
+        android:paddingHorizontal="@dimen/dp_2"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:background="@drawable/tab_back_shape">
+
+
+        <TextView
+            android:id="@+id/tab_push_consume"
+            style="@style/CustomTabStyle"
+            android:background="@drawable/bg_tab_selected"
+            android:text="自行创作" />
+
+        <!-- 竖线 -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dp_26"
+            android:background="#40FFFFFF" />
+
+        <TextView
+            android:id="@+id/tab_suggest"
+            style="@style/CustomTabStyle"
+            android:text="情节发展"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/creative_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您的创意"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/color_80FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tab_back_view"
+        android:layout_marginTop="@dimen/dp_18"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_24"/>
+
+    <EditText
+        android:id="@+id/creative_title_edit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_102"
+        app:layout_constraintTop_toBottomOf="@id/creative_title_text"
+        android:layout_marginTop="@dimen/dp_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:textColorHint="@color/color_50FFFFFF"
+        android:textColor="@color/color_90FFFFFF"
+        android:textSize="@dimen/sp_14"
+        android:gravity="top"
+        android:paddingHorizontal="@dimen/dp_12"
+        android:paddingVertical="@dimen/dp_2"
+        android:hint="填写您的创意"
+        android:background="@drawable/tab_back_shape"/>
+
+    <com.aiso.qfast.base.button.SkyStateButton
+        android:id="@+id/dislikeChapterSureBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_36"
+        app:layout_constraintTop_toBottomOf="@id/creative_title_edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/dp_68"
+        android:layout_marginTop="@dimen/dp_32"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_36"
+        app:ss_background_drawable="@drawable/random_back_shape"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14"
+        android:text="创建新的章节"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

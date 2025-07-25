@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_place_holder">#f2f2f4</color>
+    <!--基准色-->
+    <color name="vm_transparent">#00000000</color>
+    <color name="vm_translucent">#89222222</color>
+
+    <!--白色-->
+    <color name="vm_white">#ffffffff</color>
+    <color name="vm_white_87">#ddffffff</color>
+    <color name="vm_white_54">#89ffffff</color>
+    <color name="vm_white_38">#61ffffff</color>
+    <color name="vm_white_12">#1effffff</color>
+
+    <!--黑色 适合标题颜色-->
+    <color name="vm_black">#ff222222</color>
+    <color name="vm_black_87">#dd222222</color>
+    <color name="vm_black_54">#89222222</color>
+    <color name="vm_black_38">#61222222</color>
+    <color name="vm_black_12">#1e222222</color>
+
+    <!--灰黑色 适合子标题-->
+    <color name="vm_gray_black">#ff666666</color>
+    <color name="vm_gray_black_87">#df666666</color>
+    <color name="vm_gray_black_54">#8f666666</color>
+    <color name="vm_gray_black_38">#6f666666</color>
+    <color name="vm_gray_black_12">#1f666666</color>
+
+    <!--灰色 适合右侧说明文本-->
+    <color name="vm_gray">#ff999999</color>
+    <color name="vm_gray_87">#dd999999</color>
+    <color name="vm_gray_54">#89999999</color>
+    <color name="vm_gray_38">#61999999</color>
+    <color name="vm_gray_12">#1e999999</color>
+
+    <!--灰白色 适合提醒描述问题-->
+    <color name="vm_gray_white">#ffcacaca</color>
+    <color name="vm_gray_white_87">#ddcacaca</color>
+    <color name="vm_gray_white_54">#89cacaca</color>
+    <color name="vm_gray_white_38">#61cacaca</color>
+    <color name="vm_gray_white_12">#1ecacaca</color>
+
+    <!--红色-->
+    <color name="vm_red">#fffc2c47</color>
+    <color name="vm_red_87">#ddfc2c47</color>
+    <color name="vm_red_54">#89fc2c47</color>
+    <color name="vm_red_38">#61fc2c47</color>
+    <color name="vm_red_12">#1efc2c47</color>
+
+    <!--深红色-->
+    <color name="vm_red_dark">#ffd92e29</color>
+    <color name="vm_red_dark_87">#ddd92e29</color>
+    <color name="vm_red_dark_54">#89d92e29</color>
+    <color name="vm_red_dark_38">#61d92e29</color>
+    <color name="vm_red_dark_12">#1ed92e29</color>
+
+    <!--蓝色-->
+    <color name="vm_blue">#ff2196F3</color>
+    <color name="vm_blue_87">#dd2196F3</color>
+    <color name="vm_blue_54">#892196F3</color>
+    <color name="vm_blue_38">#612196F3</color>
+    <color name="vm_blue_12">#1e2196F3</color>
+
+    <!--绿色-->
+    <color name="vm_green">#ff00a520</color>
+    <color name="vm_green_87">#dd00a520</color>
+    <color name="vm_green_54">#8900a520</color>
+    <color name="vm_green_38">#6100a520</color>
+    <color name="vm_green_12">#1e00a520</color>
+
+    <!--橙色-->
+    <color name="vm_orange">#ffFF9800</color>
+    <color name="vm_orange_87">#ddFF9800</color>
+    <color name="vm_orange_54">#89FF9800</color>
+    <color name="vm_orange_38">#61FF9800</color>
+    <color name="vm_orange_12">#1eFF9800</color>
+
+    <!--深橙色-->
+    <color name="vm_deep_orange">#ffFF5722</color>
+    <color name="vm_deep_orange_87">#ddFF5722</color>
+    <color name="vm_deep_orange_54">#89FF5722</color>
+    <color name="vm_deep_orange_38">#61FF5722</color>
+    <color name="vm_deep_orange_12">#1eFF5722</color>
+
+    <!--主题色-->
+    <color name="vm_primary">@color/vm_white</color>
+    <color name="vm_primary_dark">@color/vm_white</color>
+    <color name="vm_accent">@color/vm_green</color>
+    <color name="vm_background">#fff8f8f8</color>
+    <color name="vm_toolbar_control">#fff8f8f8</color>
+
+    <!--文字-->
+    <color name="vm_display_1">@color/vm_black_87</color>
+    <color name="vm_headline">@color/vm_black_87</color>
+    <color name="vm_title">@color/vm_black</color>
+    <color name="vm_subhead">@color/vm_gray_black</color>
+    <color name="vm_menu">@color/vm_black_87</color>
+    <color name="vm_body">@color/vm_gray</color>
+    <color name="vm_caption">@color/vm_gray</color>
+    <color name="vm_description">@color/vm_gray_87</color>
+
+    <!--默认背景-->
+    <color name="vm_bg">@color/vm_white</color>
+    <color name="vm_bg_dialog">@color/vm_white</color>
+
+    <!--按钮背景-->
+    <color name="vm_btn_default">#ddcfcfcf</color>
+    <color name="vm_btn_unable">#61cfcfcf</color>
+    <color name="vm_btn_ripple">@color/vm_black_12</color>
+    <!--按钮文字-->
+    <color name="vm_btn_text_dark">@color/vm_black_87</color>
+    <color name="vm_btn_text_dark_unusable">@color/vm_black_38</color>
+    <color name="vm_btn_text_light">@color/vm_white</color>
+    <color name="vm_btn_text_light_unusable">@color/vm_black_38</color>
+
+    <!--输入-->
+    <color name="vm_edit">@color/vm_black_87</color>
+    <color name="vm_edit_hint">@color/vm_black_54</color>
+
+    <!--装饰线-->
+    <color name="vm_decoration">#dde8e8e8</color>
+
+    <!--指示器-->
+    <color name="vm_indicator_normal">@color/vm_gray_white</color>
+    <color name="vm_indicator_selected">@color/vm_green</color>
+
+    <color name="vm_toast_bg">#ff363636</color>
+    <color name="vm_toast_light_bg">@color/vm_white</color>
+    <color name="vm_toast_error_bg">@color/vm_red</color>
+    <color name="vm_toast_dark_color">@color/vm_white</color>
+    <color name="vm_toast_light_color">@color/vm_black</color>
+
+</resources>

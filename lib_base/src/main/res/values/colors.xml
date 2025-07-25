@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="main_color">#121412</color>
+    <color name="main_btn_color">#FF7DFF41</color>
+    <color name="color_30_main_btn">#4D7DFF41</color>
+    <color name="first_text_color">#FFFFFFFF</color>
+    <color name="second_text_color">#99FFFFFF</color>
+    <color name="topic_text_color">#FF449BDD</color>
+
+    <color name="accent1_button_daynight">#FF7D55EB</color>
+    <color name="on_accent1_button_daynight">#FFFFFFFF</color>
+    <color name="color_04FFFFFF">#0AFFFFFF</color>
+    <color name="color_06FFFFFF">#10FFFFFF</color>
+    <color name="color_10FFFFFF">#10FFFFFF</color>
+    <color name="color_20FFFFFF">#33FFFFFF</color>
+    <color name="color_30FFFFFF">#4CFFFFFF</color>
+    <color name="color_40FFFFFF">#65FFFFFF</color>
+    <color name="color_50FFFFFF">#7FFFFFFF</color>
+    <color name="color_60FFFFFF">#98FFFFFF</color>
+    <color name="color_70FFFFFF">#B2FFFFFF</color>
+    <color name="color_80FFFFFF">#CBFFFFFF</color>
+    <color name="color_90FFFFFF">#E6FFFFFF</color>
+    <color name="color_1A1A1A">#1A1A1A</color>
+    <color name="color_575757">#575757</color>
+    <color name="color_E65353">#E65353</color>
+
+    <color name="accent2_button_daynight">#FFF54C41</color>
+    <color name="on_accent2_button_daynight">#FFFFFFFF</color>
+</resources>

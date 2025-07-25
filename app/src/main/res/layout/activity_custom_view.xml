@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".custom_views.activity.CustomViewActivity">
+
+<!--    <com.small.world.fiction.custom_views.view.InfoBannerView-->
+<!--        android:id="@+id/infoBanner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_120"-->
+<!--        android:layout_gravity="top|center_horizontal"-->
+<!--        android:layout_marginTop="40dp"/>-->
+
+<!--    <com.small.world.fiction.custom_views.view.BubbleInteractionView-->
+<!--        android:id="@+id/bubbleView"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_gravity="center"/>-->
+
+<!--    <com.small.world.fiction.custom_views.view.ActionBarView-->
+<!--        android:id="@+id/actionBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/dp_220"/>-->
+
+    <com.small.world.fiction.custom_views.view.AgentBubbleView
+        android:id="@+id/agentBubble"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bubbleRadius="40dp"
+        app:bubbleColor="@android:color/white"
+        app:strokeColor="@color/blue"
+        app:highlightColor="@color/green"
+        app:loadingColor="@color/cyan" />
+</FrameLayout>

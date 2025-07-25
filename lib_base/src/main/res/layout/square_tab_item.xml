@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/dp_65"
+    android:gravity="center"
+    tools:text="Tab"
+    android:scaleX="1"
+    android:scaleY="1"
+    android:textColor="#AAAAAA"
+    android:textSize="@dimen/sp_14"
+    android:textStyle="normal"
+    tools:ignore="UnusedAttribute" />

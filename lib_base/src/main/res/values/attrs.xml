@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color|reference" name="ss_background_color"/>
+    <attr format="color|reference" name="ss_background_color_activated"/>
+    <attr format="color|reference" name="ss_background_color_checked"/>
+    <attr format="color|reference" name="ss_background_color_disable"/>
+    <attr format="color|reference" name="ss_background_color_pressed"/>
+    <attr format="color|reference" name="ss_background_color_selected"/>
+    <attr format="reference" name="ss_background_drawable"/>
+    <attr format="dimension" name="ss_radius"/>
+    <attr format="boolean" name="ss_round"/>
+    <attr format="color|reference" name="ss_stroke_color"/>
+    <attr format="color|reference" name="ss_stroke_color_activated"/>
+    <attr format="color|reference" name="ss_stroke_color_checked"/>
+    <attr format="color|reference" name="ss_stroke_color_disable"/>
+    <attr format="color|reference" name="ss_stroke_color_pressed"/>
+    <attr format="color|reference" name="ss_stroke_color_selected"/>
+    <attr format="dimension" name="ss_stroke_width"/>
+
+
+    <declare-styleable name="SkyButton">
+        <attr format="boolean" name="btn_auto_text_center"/>
+        <attr format="boolean" name="btn_include_font_padding"/>
+        <attr format="boolean" name="btn_disable_icon"/>
+
+        <attr format="reference" name="btn_icon1"/>
+        <attr format="dimension" name="btn_icon1_width"/>
+        <attr format="dimension" name="btn_icon1_height"/>
+        <attr format="color" name="btn_icon1_tint"/>
+        <attr name="btn_icon1_gravity">
+            <enum name="align_default" value="1"/>
+            <enum name="align_text" value="2"/>
+        </attr>
+        <attr format="reference" name="btn_icon2"/>
+        <attr format="dimension" name="btn_icon2_width"/>
+        <attr format="dimension" name="btn_icon2_height"/>
+        <attr format="color" name="btn_icon2_tint"/>
+        <attr name="btn_icon2_gravity">
+            <enum name="align_default" value="1"/>
+            <enum name="align_text" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SkyStateButton">
+        <attr name="ss_radius"/>
+        <attr name="ss_round"/>
+        <attr name="ss_stroke_width"/>
+
+        <attr format="color|reference" name="ss_text_color"/>
+        <attr name="ss_stroke_color"/>
+        <attr name="ss_background_color"/>
+
+        <attr format="color|reference" name="ss_text_color_pressed"/>
+        <attr name="ss_stroke_color_pressed"/>
+        <attr name="ss_background_color_pressed"/>
+
+        <attr format="color|reference" name="ss_text_color_selected"/>
+        <attr name="ss_stroke_color_selected"/>
+        <attr name="ss_background_color_selected"/>
+
+        <attr format="color|reference" name="ss_text_color_checked"/>
+        <attr name="ss_stroke_color_checked"/>
+        <attr name="ss_background_color_checked"/>
+
+        <attr format="color|reference" name="ss_text_color_activated"/>
+        <attr name="ss_stroke_color_activated"/>
+        <attr name="ss_background_color_activated"/>
+
+        <attr format="color|reference" name="ss_text_color_disable"/>
+        <attr name="ss_stroke_color_disable"/>
+        <attr name="ss_background_color_disable"/>
+
+        <attr name="ss_background_drawable"/>
+    </declare-styleable>
+</resources>

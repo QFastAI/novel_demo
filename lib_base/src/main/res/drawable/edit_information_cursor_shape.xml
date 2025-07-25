@@ -1,0 +1,6 @@
+<!-- res/drawable/cursor_color.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="2dp" />
+    <corners android:radius="@dimen/dp_2"/>
+    <solid android:color="@color/main_btn_color" /> <!-- 你想要的光标颜色 -->
+</shape>

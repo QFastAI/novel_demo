@@ -1,0 +1,130 @@
+[versions]
+activityKtx = "1.9.0"
+agp = "8.10.1"
+arouterApi = "1.5.2"
+arouterRegisterVersion = "1.0.2"
+banner = "2.2.3"
+commonsMath3 = "3.6.1"
+eventbus = "3.3.1"
+fastjson = "1.2.83"
+firebaseAuth = "22.3.0"
+firebaseBom = "33.16.0"
+flexbox = "3.0.0"
+fragmentKtx = "1.6.2"
+glide = "4.15.1"
+glideTransformations = "4.3.0"
+guard = "1.5.8"
+hiltAndroid = "2.48"
+immersionbar = "3.2.2"
+javaWebsocket = "1.5.4"
+kotlin = "2.0.21"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+kotlinxCoroutinesAndroid = "1.8.1"
+lifecycleViewmodelKtx = "2.8.1"
+loggingInterceptor = "4.12.0"
+material = "1.10.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+materialVersion = "1.12.0"
+mmkv = "2.2.2"
+multidex = "2.0.1"
+navigationFragmentKtx = "2.7.7"
+navigationUiKtx = "2.7.7"
+pictureselector = "v3.11.1"
+playServicesAuth = "21.0.0"
+recyclerview = "1.4.0"
+refreshLayoutKernel = "2.0.6"
+retrofit = "2.9.0"
+timber = "5.0.1"
+toaster = "12.2"
+utilcodex = "1.31.1"
+viewbinding = "8.10.1"
+object-box = "4.3.0"
+arouterRegister= "1.0.2"
+viewpager2 = "1.0.0"
+xpopup = "2.10.0"
+activityCompose = "1.10.1"
+composeBom = "2024.09.00"
+services = "4.4.3"
+
+[libraries]
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-multidex = { module = "androidx.multidex:multidex", version.ref = "multidex" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+arouter-api = { module = "com.alibaba:arouter-api", version.ref = "arouterApi" }
+arouter-compiler = { module = "com.alibaba:arouter-compiler", version.ref = "arouterApi" }
+arouter-register = { module = "com.alibaba:arouter-register", version.ref = "arouterRegisterVersion" }
+banner = { module = "io.github.youth5201314:banner", version.ref = "banner" }
+commons-math3 = { module = "org.apache.commons:commons-math3", version.ref = "commonsMath3" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+compress = { module = "io.github.lucksiege:compress", version.ref = "pictureselector" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+eventbus = { module = "org.greenrobot:eventbus", version.ref = "eventbus" }
+fastjson = { module = "com.alibaba:fastjson", version.ref = "fastjson" }
+firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+flexbox = { module = "com.google.android.flexbox:flexbox", version.ref = "flexbox" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-transformations = { module = "jp.wasabeef:glide-transformations", version.ref = "glideTransformations" }
+guard = { module = "cn.authing:guard", version.ref = "guard" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
+immersionbar = { module = "com.geyifeng.immersionbar:immersionbar", version.ref = "immersionbar" }
+immersionbar-ktx = { group = "com.geyifeng.immersionbar", name = "immersionbar-ktx", version.ref = "immersionbar" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v1120 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+mmkv = { module = "com.tencent:mmkv", version.ref = "mmkv" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "loggingInterceptor" }
+pictureselector = { module = "io.github.lucksiege:pictureselector", version.ref = "pictureselector" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+refresh-layout-kernel = { module = "io.github.scwang90:refresh-layout-kernel", version.ref = "refreshLayoutKernel" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+toaster = { module = "com.github.getActivity:Toaster", version.ref = "toaster" }
+ucrop = { module = "io.github.lucksiege:ucrop", version.ref = "pictureselector" }
+utilcodex = { module = "com.blankj:utilcodex", version.ref = "utilcodex" }
+androidx-viewbinding = { group = "androidx.databinding", name = "viewbinding", version.ref = "viewbinding" }
+objectbox-brower = { module = "io.objectbox:objectbox-android-objectbrowser", version.ref = "object-box" }
+objectbox-android = { module = "io.objectbox:objectbox-android", version.ref = "object-box" }
+#objectbox 数据库
+plugin-objectbox-gradle = { module = "io.objectbox:objectbox-gradle-plugin", version.ref = "object-box" }
+xpopup = { module = "com.github.li-xiaojun:XPopup", version.ref = "xpopup" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+#android 库插件
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "services" }
+
