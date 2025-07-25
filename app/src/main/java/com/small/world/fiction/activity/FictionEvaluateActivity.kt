@@ -59,19 +59,7 @@ class FictionEvaluateActivity : BaseActivity<ActivityFictionEvaluateBinding>() {
     }
 
     private fun initOtherData() {
-//        val chapters = ChapterConfig.chapterData
-//        if(chapters.isNotEmpty()){
-//            for (chapter in chapters){
-//                if(chapter.chapter_id != chapterDataBean?.chapter_id &&
-//                    chapter.novel_id == bookShellBean?.novel_id &&
-//                    chapterDataBean?.chapter_num == chapter.chapter_num &&
-//                    chapter.generation_details?.chapter_type == TextConfig.CREATIVITY){
-//                    otherConsumeChapters.add(chapter)
-//                }
-//            }
-//        }
         binding.evaluateOtherConsumeRecycler.layoutManager = LinearLayoutManager(this)
-//        adapter.setData(otherConsumeChapters)
         adapter.onReadClickEvent = {
             ActivityUtils.finishActivity(ReadBookActivity::class.java)
             val  intent = Intent(this, ReadBookActivity::class.java).apply {
@@ -90,7 +78,6 @@ class FictionEvaluateActivity : BaseActivity<ActivityFictionEvaluateBinding>() {
             }
             it.evaluateOrdinaryBtn.setNoFastClickListener {
                 showLikeLayout(1)
-//                jumpToNextChapter()
             }
             it.evaluateLikeBtn.setNoFastClickListener {
                 showLikeLayout(1)
@@ -159,6 +146,10 @@ class FictionEvaluateActivity : BaseActivity<ActivityFictionEvaluateBinding>() {
                         chapterList.add(chapterData)
                     }
                 }
+                //用章节里边的likeCount-dislikeCount的结果进行排序
+                chapterList.sortByDescending {
+                    it.review?.like_count?.minus(it.review?.dislike_count ?: 0)
+                }
                 //跟新适配器的数据
                 adapter.setData(chapterList)
             }
@@ -172,6 +163,10 @@ class FictionEvaluateActivity : BaseActivity<ActivityFictionEvaluateBinding>() {
                         chapterData.chapter_num == chapterDataBean?.chapter_num){
                         chapterList.add(chapterData)
                     }
+                }
+                //用章节里边的likeCount-dislikeCount的结果进行排序
+                chapterList.sortByDescending {
+                    it.review?.like_count?.minus(it.review?.dislike_count ?: 0)
                 }
                 //跟新适配器的数据
                 adapter.setData(chapterList)

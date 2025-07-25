@@ -11,8 +11,10 @@ import com.aiso.qfast.base.BaseActivity
 import com.aiso.qfast.base.R
 import com.aiso.qfast.base.ext.doOnApplyWindowInsets
 import com.aiso.qfast.base.ext.showSystemBars
+import com.aiso.qfast.utils.MMKVHelper
 import com.aiso.qfast.utils.dialog.DialogUtil
 import com.aiso.qfast.utils.toJson
+import com.blankj.utilcode.util.GsonUtils
 import com.google.firebase.auth.FirebaseAuth
 import com.small.world.fiction.adapter.BookShellAdapter
 import com.small.world.fiction.bean.Chapter
@@ -21,6 +23,7 @@ import com.small.world.fiction.bean.ChapterRequestDetails
 import com.small.world.fiction.bean.ChoicesStatus
 import com.small.world.fiction.bean.ContentStatus
 import com.small.world.fiction.bean.CreateFictionBean
+import com.small.world.fiction.bean.LastReadNovelBean
 import com.small.world.fiction.bean.Review
 import com.small.world.fiction.bean.UrlStatus
 import com.small.world.fiction.config.ChapterConfig
@@ -65,20 +68,37 @@ class BookShellActivity : BaseActivity<ActivityBookShellBinding>() {
         adapter.bookDataClick = {
             val chapterList = ChapterConfig.chapterData
             if(chapterList.isNotEmpty()){
-                for (chapter in chapterList){
-                    if(chapter.novel_id == it.novel_id &&
-                        chapter.chapter_num == 1 &&
-                        chapter.prev_chapter_id == "none"&&
-                        chapter.content?.status == TextConfig.GENERATED
-                    ){
-                        //这个时候给novel的数据和chapter的数据都得带到阅读页面
-                        //主要是方便用户自行创建章节的时候数据的组合
-                        val intent = Intent(this, ReadBookActivity::class.java)
-                        intent.putExtra("novel", it.toJson())
-                        intent.putExtra("chapter", chapter.toJson())
-                        startActivity( intent)
-
-                        initLittleData(it)
+                //获取上一次的阅读数据
+                val lastReadData = MMKVHelper.getGlobalInstance().getString(it.novel_id ?: "")
+                if(lastReadData?.isNotBlank() == true){
+                    val lastReadBean = GsonUtils.fromJson(lastReadData, LastReadNovelBean::class.java)
+                    //获取对应的章节
+                    for(chapter in ChapterConfig.chapterData){
+                        if(chapter.chapter_id == lastReadBean.chapter_id){
+                            val intent = Intent(this, ReadBookActivity::class.java)
+                            intent.putExtra("novel", it.toJson())
+                            intent.putExtra("chapter", chapter.toJson())
+                            intent.putExtra("defaultPage", lastReadBean.lastPageIndex)
+                            startActivity(intent)
+                            break
+                        }
+                    }
+                }else {
+                    for (chapter in chapterList) {
+                        if (chapter.novel_id == it.novel_id &&
+                            chapter.chapter_num == 1 &&
+                            chapter.prev_chapter_id == "none" &&
+                            chapter.content?.status == TextConfig.GENERATED
+                        ) {
+                            //这个时候给novel的数据和chapter的数据都得带到阅读页面
+                            //主要是方便用户自行创建章节的时候数据的组合
+                            val intent = Intent(this, ReadBookActivity::class.java)
+                            intent.putExtra("novel", it.toJson())
+                            intent.putExtra("chapter", chapter.toJson())
+                            startActivity(intent)
+                            break
+//                        initLittleData(it)
+                        }
                     }
                 }
             }

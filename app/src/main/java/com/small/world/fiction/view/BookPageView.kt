@@ -55,12 +55,12 @@ class PageReaderView @JvmOverloads constructor(
         isClickable = true
     }
 
-    fun setTitleAndText(title: String, text: String) {
+    fun setTitleAndText(title: String, text: String,defaultPage: Int = 0) {
         this.titleText = title
         this.chapterText = text
         post {
             paginateText()
-            currentPage = 0
+            currentPage = defaultPage.coerceIn(0, pages.size - 1)
             notifyPageChange()
             invalidate()
         }

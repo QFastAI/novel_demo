@@ -61,5 +61,7 @@ class TextConfig {
         val PENDING = "pending"
 
         val CREATIVITY = "creativity"
+
+        val LAST_READ_NOVEL = "lastReadNovelBean"
     }
 }

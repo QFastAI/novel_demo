@@ -26,7 +26,7 @@ object MMKVHelper {
     const val TAG = "MMKVHelper"
 
     private val globalKv: MMKVWrapper by lazy {
-        MMKVWrapper("tt_global_mmkv")
+        MMKVWrapper("global_mmkv")
     }
 
     private var userKv: MMKVWrapper? = null

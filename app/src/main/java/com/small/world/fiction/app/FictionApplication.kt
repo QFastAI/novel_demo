@@ -2,6 +2,7 @@ package com.small.world.fiction.app
 
 import android.app.Application
 import com.aiso.qfast.utils.LogUtils
+import com.aiso.qfast.utils.MMKVHelper
 import com.google.firebase.FirebaseApp
 
 class FictionApplication: Application() {
@@ -9,5 +10,6 @@ class FictionApplication: Application() {
         super.onCreate()
         FirebaseApp.initializeApp(this)
         LogUtils.init()
+        MMKVHelper.init(this)
     }
 }
